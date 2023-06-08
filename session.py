@@ -1,10 +1,5 @@
-import consts
-import boards
 import DataContainer
 import stage
-
-from psychopy import visual, core, event, clock
-import random
 
 
 def run_session(session_number, window, is_training):
