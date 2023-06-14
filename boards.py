@@ -1,4 +1,4 @@
-import consts
+import instruction
 from psychopy import visual, core, event
 
 
@@ -14,7 +14,7 @@ def show_board(window, text, to_continue="\n\n\nAby kontynuować, naciśnij dowo
 
 
 def show_instruction(window):
-    show_board(window, consts.INSTRUCTION, size=0.02)
+    show_board(window, instruction.INSTRUCTION, size=0.02)
 
 
 def show_error_board(window):

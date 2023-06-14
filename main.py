@@ -3,7 +3,7 @@ import boards
 import DataContainer
 import session
 
-from psychopy import visual, core, event, clock
+from psychopy import visual, core
 import json
 import datetime
 
@@ -21,6 +21,7 @@ def main():
     data_container = DataContainer.DataContainer([])
 
     boards.show_instruction(window)
+    boards.show_training_board(window)
     result = session.run_session(0, window, True).lastStage
     boards.show_training_end_board(window, result)
     for i in range(3):

@@ -3,7 +3,7 @@ import stage
 
 
 def run_session(session_number, window, is_training):
-    session_data = DataContainer.Session(session_number, [], [], 0)
+    session_data = DataContainer.Session(session_number+1, [], [], 0)
     n = 4
     strikes = 0
 
